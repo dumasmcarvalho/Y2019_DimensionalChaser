@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GrandChase Dimensional Chaser</title>
+    <link rel="icon" href="images/icons/GrandChase.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/historia.css">
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+</head>
+
+<script type="text/javascript">
+    function carregar(pagina) {
+        $("#content").load(pagina);
+    }
+</script>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="index.html" class="ripper">Início</a>
+            <a onclick="carregar('pages/historia.html');" href="#" class="ripper">História</a>
+            <a onclick="carregar('pages/personagens.html');" href="#">Personagens</a>
+            <a onclick="carregar('pages/mundos.html');" href="#">Mundos</a>
+            <a onclick="carregar('pages/sobre.html');" href="#">Sobre</a>
+        </div>
+        <div class="content" id="content"></div>
+    </div>
+</body>
+
+</html>
