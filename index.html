@@ -9,12 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/historia.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/personagens.css">
     <script src="scripts/jquery-3.1.1.min.js"></script>
 </head>
 
 <script type="text/javascript">
     function carregar(pagina) {
-        $("#content").load(pagina);
+        $("#main").load(pagina);
     }
 </script>
 
@@ -27,7 +28,7 @@
             <a onclick="carregar('pages/mundos.html');" href="#">Mundos</a>
             <a onclick="carregar('pages/sobre.html');" href="#">Sobre</a>
         </div>
-        <div class="content" id="content"></div>
+        <div class="content" id="main"></div>
     </div>
 </body>
 
