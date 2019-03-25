@@ -1,3 +1,5 @@
+/* Trocar DIVs (Próximo e Anterior) */
+
 var divIndex = 1;
 mostrarDiv(divIndex);
 
