@@ -8,8 +8,10 @@ function trocarDiv(n) {
 }
 
 function mostrarDiv(n) {
+
     var i;
     var x = document.getElementsByClassName("slidesDiv");
+
     if (n > x.length) {
         divIndex = 1
     }
@@ -19,5 +21,6 @@ function mostrarDiv(n) {
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
+
     x[divIndex - 1].style.display = "block";
 }

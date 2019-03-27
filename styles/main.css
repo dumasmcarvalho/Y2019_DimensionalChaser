@@ -1,4 +1,4 @@
-/* Página Principal */
+/* Global */
 
 @font-face {
     font-family: "Faktos";
@@ -7,23 +7,41 @@
     font-style: normal;
 }
 
-html {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
+    font-family: "Faktos";
+    color: white;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
+p,
+h3,
+h2,
+h1 {
+    text-align: justify;
+    filter: drop-shadow(4px 4px 2px black);
 }
+
+h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+
+p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Página Principal */
 
 .container,
 .content,
 .sidebar {
     background-color: transparent;
-    font-family: "Faktos";
 }
 
 .sidebar,
@@ -63,6 +81,7 @@ body {
     display: block;
     padding: 10%;
     margin: 15px 0 0 15px;
+    font-family: "Faktos";
     color: white;
     font-size: 2vw;
     text-decoration: none;
@@ -75,12 +94,166 @@ body {
     transform-origin: top left;
 }
 
+/* Página História */
+
+/* Formatação do Fundo dos Divs */
+
+.fundoTextos,
+.fundoBotoes {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Formatação para Botões */
+
+.fundoBotoes {
+    display: table;
+    width: 95%;
+    height: 5%;
+    margin-bottom: 0.5%;
+}
+
+.fundoTextos {
+    display: block;
+    width: 95%;
+    height: 90%;
+}
+
+.fundoBotoes button {
+    display: table-cell;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: larger;
+    outline: none;
+    text-align: center;
+    font-family: "Faktos";
+    color: white;
+    filter: drop-shadow(4px 4px 2px black);
+    transition: all 0.3s ease-in-out;
+}
+
+.fundoBotoes button:hover {
+    transform: scale(1.3);
+}
+
+/* Formatação das Imagens */
+
+.imagemHistoria,
+.imagemMundos {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px 2px black);
+    transition: all 0.3s ease-in-out;
+}
+
+.imagemHistoria {
+    margin-bottom: 2%;
+}
+
+.imagemMundos {
+    margin-top: 2%;
+}
+
+.imagemHistoria:hover,
+.imagemMundos:hover {
+    transform: scale(1.3);
+}
+
+/* Página Personagens */
+
+/* Barra dos Personagens */
+
+.barraPersonagens {
+    display: block;
+    width: 95%;
+    height: 5%;
+    margin-bottom: 0.5%;
+}
+
+.barraPersonagens table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.barraPersonagens td {
+    padding: 5px;
+}
+
+.barraPersonagens img {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 2px black);
+}
+
+.barraPersonagens img:hover {
+    box-shadow: 0 0 20px black;
+}
+
+/* Descrição */
+
+.barraDescricao {
+    display: block;
+    width: 95%;
+    height: 90%;
+}
+
+/* Informações dos Personagens */
+
+.personagem {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.imagemPersonagem,
+.descricaoPersonagem {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.imagemPersonagem {
+    width: 400px;
+    height: 490px;
+}
+
+.imagem {
+    display: block;
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(4px 4px 2px black);
+}
+
+.tipo {
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(4px 4px 2px black);
+}
+
 /* Efeitos Compartilhados */
 
 /* Efeito Fading */
 
 .slidesDiv-fading {
-    animation: fading 0.3s ease-in-out;
+    animation: fading 0.6s ease-in-out;
     animation-fill-mode: forwards;
 }
 

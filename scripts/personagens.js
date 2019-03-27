@@ -3,7 +3,6 @@
 var barraDescricao = document.getElementsByClassName("barraDescricao")[0];
 barraDescricao.style.display = "none";
 
-
 function mostrarDiv(divIndex) {
 
     var i;
