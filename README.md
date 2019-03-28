@@ -3,4 +3,4 @@ Projeto prático utilizado como método de avaliação parcial da disciplina Des
 
 Desenvolvido por: Dumas Morais de Carvalho.
 
-All Rights Are Reserved (History, Official Art, Sounds, etc.) to © Kog Corporation and Kakao Games.
+All Rights Are Reserved (History, Official Art, Sounds, etc.) to © KOG Corporation.
