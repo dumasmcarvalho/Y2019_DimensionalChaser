@@ -10,17 +10,17 @@ function trocarDiv(n) {
 function mostrarDiv(n) {
 
     var i;
-    var x = document.getElementsByClassName("slidesDiv");
+    var div = document.getElementsByClassName("slidesDiv");
 
-    if (n > x.length) {
+    if (n > div.length) {
         divIndex = 1
     }
     if (n < 1) {
-        divIndex = x.length
+        divIndex = div.length
     };
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    for (i = 0; i < div.length; i++) {
+        div[i].style.display = "none";
     }
 
-    x[divIndex - 1].style.display = "block";
+    div[divIndex - 1].style.display = "block";
 }
