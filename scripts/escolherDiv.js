@@ -13,7 +13,7 @@ function escolherDiv(divIndex) {
         if (i == divIndex) {
             div[i].style.display = "block";
             barraDescricao.style.display = "block";
-            som.src = "/sounds/" + (i + 1) + ".mp3";
+            som.src = "sounds/" + (i + 1) + ".mp3";
             som.play();
         } else {
             div[i].style.display = "none";
