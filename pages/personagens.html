@@ -1,572 +1,558 @@
 <!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>GrandChase Dimensional Chaser</title>
-    <link rel="icon" href="../images/icons/GrandChase.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css">
-    <script src="../scripts/jquery-3.1.1.min.js"></script>
-    <script src="../scripts/personagens.js"></script>
-</head>
+<script src="scripts/escolherDiv.js"></script>
 
-<body>
-    <div class="personagens">
-        <div class="barraPersonagens fundoBotoes slidesDiv-fading">
-            <table>
-                <tr>
-                    <td><img src="../images/icons/01_Elesis.png" onclick="mostrarDiv(0)"></td>
-                    <td><img src="../images/icons/02_Lire.png" onclick="mostrarDiv(1)"></td>
-                    <td><img src="../images/icons/03_Arme.png" onclick="mostrarDiv(2)"></td>
-                    <td><img src="../images/icons/04_Lass.png" onclick="mostrarDiv(3)"></td>
-                    <td><img src="../images/icons/05_Ryan.png" onclick="mostrarDiv(4)"></td>
-                    <td><img src="../images/icons/06_Ronan.png" onclick="mostrarDiv(5)"></td>
-                    <td><img src="../images/icons/07_Amy.png" onclick="mostrarDiv(6)"></td>
-                    <td><img src="../images/icons/08_Jin.png" onclick="mostrarDiv(7)"></td>
-                    <td><img src="../images/icons/09_Sieghart.png" onclick="mostrarDiv(8)"></td>
-                    <td><img src="../images/icons/10_Mari.png" onclick="mostrarDiv(9)"></td>
-                </tr>
-                <tr>
-                    <td><img src="../images/icons/11_Dio.png" onclick="mostrarDiv(10)"></td>
-                    <td><img src="../images/icons/12_Zero.png" onclick="mostrarDiv(11)"></td>
-                    <td><img src="../images/icons/13_Rey.png" onclick="mostrarDiv(12)"></td>
-                    <td><img src="../images/icons/14_Lupus.png" onclick="mostrarDiv(13)"></td>
-                    <td><img src="../images/icons/15_Lin.png" onclick="mostrarDiv(14)"></td>
-                    <td><img src="../images/icons/16_Azin.png" onclick="mostrarDiv(15)"></td>
-                    <td><img src="../images/icons/17_Lime.png" onclick="mostrarDiv(16)"></td>
-                    <td><img src="../images/icons/18_Edel.png" onclick="mostrarDiv(17)"></td>
-                    <td><img src="../images/icons/19_Veigas.png" onclick="mostrarDiv(18)"></td>
-                    <td></td>
-                </tr>
-            </table>
+<div class="personagens">
+    <div class="barraPersonagens fundoBotoes divsFading">
+        <table>
+            <tr>
+                <td><img src="images/icons/01_Elesis.png" onclick="escolherDiv(0)"></td>
+                <td><img src="images/icons/02_Lire.png" onclick="escolherDiv(1)"></td>
+                <td><img src="images/icons/03_Arme.png" onclick="escolherDiv(2)"></td>
+                <td><img src="images/icons/04_Lass.png" onclick="escolherDiv(3)"></td>
+                <td><img src="images/icons/05_Ryan.png" onclick="escolherDiv(4)"></td>
+                <td><img src="images/icons/06_Ronan.png" onclick="escolherDiv(5)"></td>
+                <td><img src="images/icons/07_Amy.png" onclick="escolherDiv(6)"></td>
+                <td><img src="images/icons/08_Jin.png" onclick="escolherDiv(7)"></td>
+                <td><img src="images/icons/09_Sieghart.png" onclick="escolherDiv(8)"></td>
+                <td><img src="images/icons/10_Mari.png" onclick="escolherDiv(9)"></td>
+            </tr>
+            <tr>
+                <td><img src="images/icons/11_Dio.png" onclick="escolherDiv(10)"></td>
+                <td><img src="images/icons/12_Zero.png" onclick="escolherDiv(11)"></td>
+                <td><img src="images/icons/13_Rey.png" onclick="escolherDiv(12)"></td>
+                <td><img src="images/icons/14_Lupus.png" onclick="escolherDiv(13)"></td>
+                <td><img src="images/icons/15_Lin.png" onclick="escolherDiv(14)"></td>
+                <td><img src="images/icons/16_Azin.png" onclick="escolherDiv(15)"></td>
+                <td><img src="images/icons/17_Lime.png" onclick="escolherDiv(16)"></td>
+                <td><img src="images/icons/18_Edel.png" onclick="escolherDiv(17)"></td>
+                <td><img src="images/icons/19_Veigas.png" onclick="escolherDiv(18)"></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="barraDescricao fundoTextos divsFading">
+        <audio id="musica" preload="auto"></audio>
+        <!--Elesis-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Assault.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Elesis Sieghart</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/01_Grand_Chase_for_kakao_Elesis_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/01_Grand_Chase_for_kakao_Elesis_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/01_Grand_Chase_for_kakao_Elesis_01.png';"
+                    class="imagem" />
+            </div>
+            <div class="descricaoPersonagem">
+                <h2>"A Capitã dos Cavaleiros Vermelhos e Líder da GrandChase"</h2>
+                <p>
+                    Elesis nasceu como a filha mais velha da família Sieghart, ela treinou duramente desde que tinha
+                    idade para segurar uma espada, e foi a Capitã dos Cavaleiros Vermelhos por muitos anos. Como
+                    cirança, Elesis não entendia os motivos da criação severa de seu pai. Porém, quando cresceu, ela
+                    começou a compreender a importância dos métodos de seu pai e dedicou todo seu tempo para se
+                    tornar mmais forte. Seu pai, Elscud, juntou-se a um time dedicado a perseguir Cazeaje.<br><br>
+                    Elesis ficou inconsolável ao descobrir que durante a batalha do time de seu pai e Cazeaje, ele
+                    havia desaparecido. Mais tarde, a Rainha de Serdin enviou uma carta secreta para Elesis, pedindo
+                    que ela se juntasse à GrandChase, uma união entre Canaban e Serdin dedicada a perseguir Cazeaje.
+                    Após receber este pedido, Elesis deixou sua casa e foi para a Floresta dos Desafios no Reino de
+                    Serdin, o local combinado. Ali, ela conheceu duas garotas, Lire e Arme que iriam mudar seu
+                    destino para sempre.
+                </p>
+            </div>
         </div>
-        <div class="barraDescricao fundoTextos slidesDiv-fading">
-            <audio id="musica" preload="auto"></audio>
-            <!--Elesis-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Assault.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Elesis Sieghart</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/01_Grand_Chase_for_kakao_Elesis_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/01_Grand_Chase_for_kakao_Elesis_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/01_Grand_Chase_for_kakao_Elesis_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"A Capitã dos Cavaleiros Vermelhos e Líder da GrandChase"</h2>
-                    <p>
-                        Elesis nasceu como a filha mais velha da família Sieghart, ela treinou duramente desde que tinha
-                        idade para segurar uma espada, e foi a Capitã dos Cavaleiros Vermelhos por muitos anos. Como
-                        cirança, Elesis não entendia os motivos da criação severa de seu pai. Porém, quando cresceu, ela
-                        começou a compreender a importância dos métodos de seu pai e dedicou todo seu tempo para se
-                        tornar mmais forte. Seu pai, Elscud, juntou-se a um time dedicado a perseguir Cazeaje.<br><br>
-                        Elesis ficou inconsolável ao descobrir que durante a batalha do time de seu pai e Cazeaje, ele
-                        havia desaparecido. Mais tarde, a Rainha de Serdin enviou uma carta secreta para Elesis, pedindo
-                        que ela se juntasse à GrandChase, uma união entre Canaban e Serdin dedicada a perseguir Cazeaje.
-                        Após receber este pedido, Elesis deixou sua casa e foi para a Floresta dos Desafios no Reino de
-                        Serdin, o local combinado. Ali, ela conheceu duas garotas, Lire e Arme que iriam mudar seu
-                        destino para sempre.
-                    </p>
-                </div>
+        <!--Lire-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Ranged.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Lire Eryuell</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/02_Grand_Chase_for_kakao_Lire_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/02_Grand_Chase_for_kakao_Lire_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/02_Grand_Chase_for_kakao_Lire_01.png';"
+                    class="imagem" />
             </div>
-            <!--Lire-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Ranged.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Lire Eryuell</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/02_Grand_Chase_for_kakao_Lire_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/02_Grand_Chase_for_kakao_Lire_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/02_Grand_Chase_for_kakao_Lire_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"A Elfa Amante da Paz da Ilha de Eryuell"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+            <div class="descricaoPersonagem">
+                <h2>"A Elfa Amante da Paz da Ilha de Eryuell"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
             </div>
-            <!--Arme-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Mage.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Arme Glenstid</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/03_Grand_Chase_for_kakao_Arme_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/03_Grand_Chase_for_kakao_Arme_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/03_Grand_Chase_for_kakao_Arme_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"A Maga Genial da Guilda dos Magos Violeta"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+        </div>
+        <!--Arme-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Mage.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Arme Glenstid</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/03_Grand_Chase_for_kakao_Arme_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/03_Grand_Chase_for_kakao_Arme_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/03_Grand_Chase_for_kakao_Arme_01.png';"
+                    class="imagem" />
             </div>
-            <!--Lass-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Assault.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Lass Isolet</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/04_Grand_Chase_for_kakao_Lass_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/04_Grand_Chase_for_kakao_Lass_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/04_Grand_Chase_for_kakao_Lass_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"O Assassino Prateado com um Passado Sombrio"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+            <div class="descricaoPersonagem">
+                <h2>"A Maga Genial da Guilda dos Magos Violeta"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
             </div>
-            <!--Ryan-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Tank.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Ryan Woodguard</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/05_Grand_Chase_for_kakao_Ryan_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/05_Grand_Chase_for_kakao_Ryan_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/05_Grand_Chase_for_kakao_Ryan_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"O Druída Guardião da Natureza"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+        </div>
+        <!--Lass-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Assault.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Lass Isolet</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/04_Grand_Chase_for_kakao_Lass_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/04_Grand_Chase_for_kakao_Lass_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/04_Grand_Chase_for_kakao_Lass_01.png';"
+                    class="imagem" />
             </div>
-            <!--Ronan-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Tank.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Ronan Erudon</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/06_Grand_Chase_for_kakao_Ronan_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/06_Grand_Chase_for_kakao_Ronan_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/06_Grand_Chase_for_kakao_Ronan_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"O Capitão da Guarda Real de Canaban"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+            <div class="descricaoPersonagem">
+                <h2>"O Assassino Prateado com um Passado Sombrio"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
             </div>
-            <!--Amy-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Support.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Amy Plie</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/07_Grand_Chase_for_kakao_Amy_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/07_Grand_Chase_for_kakao_Amy_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/07_Grand_Chase_for_kakao_Amy_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"A Maior Idol da Terra da Prata"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+        </div>
+        <!--Ryan-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Tank.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Ryan Woodguard</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/05_Grand_Chase_for_kakao_Ryan_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/05_Grand_Chase_for_kakao_Ryan_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/05_Grand_Chase_for_kakao_Ryan_01.png';"
+                    class="imagem" />
             </div>
-            <!--Jin-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Tank.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Jin Kaien</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/08_Grand_Chase_for_kakao_Jin_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/08_Grand_Chase_for_kakao_Jin_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/08_Grand_Chase_for_kakao_Jin_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"O Lutador da Terra da Prata"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+            <div class="descricaoPersonagem">
+                <h2>"O Druída Guardião da Natureza"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
             </div>
-            <!--Sieghart-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Assault.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Ercnard Sieghart</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/09_Grand_Chase_for_kakao_Sieghart_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/09_Grand_Chase_for_kakao_Sieghart_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/09_Grand_Chase_for_kakao_Sieghart_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"O Gladiador Lendário"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+        </div>
+        <!--Ronan-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Tank.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Ronan Erudon</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/06_Grand_Chase_for_kakao_Ronan_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/06_Grand_Chase_for_kakao_Ronan_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/06_Grand_Chase_for_kakao_Ronan_01.png';"
+                    class="imagem" />
             </div>
-            <!--Mari-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Mage.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Mari Ming Ornette</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/10_Grand_Chase_for_kakao_Mari_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/10_Grand_Chase_for_kakao_Mari_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/10_Grand_Chase_for_kakao_Mari_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"A Última Princesa do Reino Ancestral"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+            <div class="descricaoPersonagem">
+                <h2>"O Capitão da Guarda Real de Canaban"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
             </div>
-            <!--Dio-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Assault.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Dio Burning Canyon</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/11_Grand_Chase_for_kakao_Dio_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/11_Grand_Chase_for_kakao_Dio_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/11_Grand_Chase_for_kakao_Dio_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"O Líder da Facção Demoníaca Moderada"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+        </div>
+        <!--Amy-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Support.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Amy Plie</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/07_Grand_Chase_for_kakao_Amy_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/07_Grand_Chase_for_kakao_Amy_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/07_Grand_Chase_for_kakao_Amy_01.png';"
+                    class="imagem" />
             </div>
-            <!--Zero-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Tank.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Zero Zephyrum</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/12_Grand_Chase_for_kakao_Zero_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/12_Grand_Chase_for_kakao_Zero_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/12_Grand_Chase_for_kakao_Zero_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"A Criatura Criada para Controlar a Espada Demoníaca"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+            <div class="descricaoPersonagem">
+                <h2>"A Maior Idol da Terra da Prata"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
             </div>
-            <!--Rey-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Mage.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Rey von Crimson River</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/13_Grand_Chase_for_kakao_Rey_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/13_Grand_Chase_for_kakao_Rey_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/13_Grand_Chase_for_kakao_Rey_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"A Distinta Invocadora do Mundo dos Demônios"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+        </div>
+        <!--Jin-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Tank.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Jin Kaien</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/08_Grand_Chase_for_kakao_Jin_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/08_Grand_Chase_for_kakao_Jin_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/08_Grand_Chase_for_kakao_Jin_01.png';"
+                    class="imagem" />
             </div>
-            <!--Lupus-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Ranged.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Lupus Wilde</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/14_Grand_Chase_for_kakao_Lupus_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/14_Grand_Chase_for_kakao_Lupus_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/14_Grand_Chase_for_kakao_Lupus_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"O Caçador de Recompensas do Mundo dos Mortos"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+            <div class="descricaoPersonagem">
+                <h2>"O Lutador da Terra da Prata"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
             </div>
-            <!--Lin-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Support.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Lin</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/15_Grand_Chase_for_kakao_Lin_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/15_Grand_Chase_for_kakao_Lin_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/15_Grand_Chase_for_kakao_Lin_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"A Reencarnação da Deusa que Carrega o Mal"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+        </div>
+        <!--Sieghart-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Assault.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Ercnard Sieghart</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/09_Grand_Chase_for_kakao_Sieghart_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/09_Grand_Chase_for_kakao_Sieghart_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/09_Grand_Chase_for_kakao_Sieghart_01.png';"
+                    class="imagem" />
             </div>
-            <!--Azin-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Tank.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Azin</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/16_Grand_Chase_for_kakao_Azin_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/16_Grand_Chase_for_kakao_Azin_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/16_Grand_Chase_for_kakao_Azin_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"A Raposa Azul de Canaban"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+            <div class="descricaoPersonagem">
+                <h2>"O Gladiador Lendário"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
             </div>
-            <!--Lime-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Support.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Lime Serenity</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/17_Grand_Chase_for_kakao_Lime_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/17_Grand_Chase_for_kakao_Lime_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/17_Grand_Chase_for_kakao_Lime_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"A Cavaleira Sagrada que Maneja o Martelo da Justiça"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+        </div>
+        <!--Mari-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Mage.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Mari Ming Ornette</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/10_Grand_Chase_for_kakao_Mari_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/10_Grand_Chase_for_kakao_Mari_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/10_Grand_Chase_for_kakao_Mari_01.png';"
+                    class="imagem" />
             </div>
-            <!--Edel-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Assault.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Edel Frost</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/18_Grand_Chase_for_kakao_Edel_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/18_Grand_Chase_for_kakao_Edel_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/18_Grand_Chase_for_kakao_Edel_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"A Última Esperança do Domínio Frost"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+            <div class="descricaoPersonagem">
+                <h2>"A Última Princesa do Reino Ancestral"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
             </div>
-            <!--Veigas-->
-            <div class="personagem slidesDiv slidesDiv-fading">
-                <div class="imagemPersonagem">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="../images/icons/Category_Mage.png" class="tipo">
-                            </td>
-                            <td>
-                                <h1>Veigas Terre</h1>
-                            </td>
-                        </tr>
-                    </table>
-                    <img src="../images/grandchase/mobile/19_Grand_Chase_for_kakao_Veigas_01.png"
-                        onmouseover="this.src='../images/grandchase/mobile/19_Grand_Chase_for_kakao_Veigas_02.png';"
-                        onmouseout="this.src='../images/grandchase/mobile/19_Grand_Chase_for_kakao_Veigas_01.png';"
-                        class="imagem" />
-                </div>
-                <div class="descricaoPersonagem">
-                    <h2>"O Soberano do Mundo dos Demônios que Distorce o Espaço"</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
-                        officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
-                        dolore culpa nam laborum consectetur voluptas, atque est.
-                    </p>
-                </div>
+        </div>
+        <!--Dio-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Assault.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Dio Burning Canyon</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/11_Grand_Chase_for_kakao_Dio_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/11_Grand_Chase_for_kakao_Dio_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/11_Grand_Chase_for_kakao_Dio_01.png';"
+                    class="imagem" />
+            </div>
+            <div class="descricaoPersonagem">
+                <h2>"O Líder da Facção Demoníaca Moderada"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
+            </div>
+        </div>
+        <!--Zero-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Tank.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Zero Zephyrum</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/12_Grand_Chase_for_kakao_Zero_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/12_Grand_Chase_for_kakao_Zero_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/12_Grand_Chase_for_kakao_Zero_01.png';"
+                    class="imagem" />
+            </div>
+            <div class="descricaoPersonagem">
+                <h2>"A Criatura Criada para Controlar a Espada Demoníaca"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
+            </div>
+        </div>
+        <!--Rey-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Mage.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Rey von Crimson River</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/13_Grand_Chase_for_kakao_Rey_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/13_Grand_Chase_for_kakao_Rey_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/13_Grand_Chase_for_kakao_Rey_01.png';"
+                    class="imagem" />
+            </div>
+            <div class="descricaoPersonagem">
+                <h2>"A Distinta Invocadora do Mundo dos Demônios"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
+            </div>
+        </div>
+        <!--Lupus-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Ranged.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Lupus Wilde</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/14_Grand_Chase_for_kakao_Lupus_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/14_Grand_Chase_for_kakao_Lupus_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/14_Grand_Chase_for_kakao_Lupus_01.png';"
+                    class="imagem" />
+            </div>
+            <div class="descricaoPersonagem">
+                <h2>"O Caçador de Recompensas do Mundo dos Mortos"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
+            </div>
+        </div>
+        <!--Lin-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Support.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Lin</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/15_Grand_Chase_for_kakao_Lin_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/15_Grand_Chase_for_kakao_Lin_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/15_Grand_Chase_for_kakao_Lin_01.png';"
+                    class="imagem" />
+            </div>
+            <div class="descricaoPersonagem">
+                <h2>"A Reencarnação da Deusa que Carrega o Mal"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
+            </div>
+        </div>
+        <!--Azin-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Tank.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Azin</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/16_Grand_Chase_for_kakao_Azin_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/16_Grand_Chase_for_kakao_Azin_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/16_Grand_Chase_for_kakao_Azin_01.png';"
+                    class="imagem" />
+            </div>
+            <div class="descricaoPersonagem">
+                <h2>"A Raposa Azul de Canaban"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
+            </div>
+        </div>
+        <!--Lime-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Support.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Lime Serenity</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/17_Grand_Chase_for_kakao_Lime_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/17_Grand_Chase_for_kakao_Lime_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/17_Grand_Chase_for_kakao_Lime_01.png';"
+                    class="imagem" />
+            </div>
+            <div class="descricaoPersonagem">
+                <h2>"A Cavaleira Sagrada que Maneja o Martelo da Justiça"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
+            </div>
+        </div>
+        <!--Edel-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Assault.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Edel Frost</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/18_Grand_Chase_for_kakao_Edel_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/18_Grand_Chase_for_kakao_Edel_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/18_Grand_Chase_for_kakao_Edel_01.png';"
+                    class="imagem" />
+            </div>
+            <div class="descricaoPersonagem">
+                <h2>"A Última Esperança do Domínio Frost"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
+            </div>
+        </div>
+        <!--Veigas-->
+        <div class="personagensDiv divsFading">
+            <div class="imagemPersonagem">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/icons/Category_Mage.png" class="tipo">
+                        </td>
+                        <td>
+                            <h1>Veigas Terre</h1>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/grandchase/mobile/19_Grand_Chase_for_kakao_Veigas_01.png"
+                    onmouseover="this.src='images/grandchase/mobile/19_Grand_Chase_for_kakao_Veigas_02.png';"
+                    onmouseout="this.src='images/grandchase/mobile/19_Grand_Chase_for_kakao_Veigas_01.png';"
+                    class="imagem" />
+            </div>
+            <div class="descricaoPersonagem">
+                <h2>"O Soberano do Mundo dos Demônios que Distorce o Espaço"</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cupiditate cumque adipisci
+                    officiis libero accusantium aperiam inventore commodi pariatur veniam consequatur exercitationem
+                    dolore culpa nam laborum consectetur voluptas, atque est.
+                </p>
             </div>
         </div>
     </div>
-</body>
-
-</html>
+</div>
